@@ -22,7 +22,7 @@ function setup() {
 	
 	paperObject=new paper(200,450,70);
 	groundObject=new ground(width/2,670,width,20);
-	dustbinObj=new dustbin(1200,660);
+	dustbinObj=new dustbin(1200,650);
 	//powerdisp=new powerdisplay(200,200,100);
 	launcherObject=new launcher(paperObject.body,{x:300,y:300})
 	//Create a Ground
