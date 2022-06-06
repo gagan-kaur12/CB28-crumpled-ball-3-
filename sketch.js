@@ -23,7 +23,7 @@ function setup() {
 	paperObject=new paper(200,450,70);
 	groundObject=new ground(width/2,670,width,20);
 	dustbinObj=new dustbin(1200,650);
-	//powerdisp=new powerdisplay(200,200,100);
+	
 	launcherObject=new launcher(paperObject.body,{x:300,y:300})
 	//Create a Ground
 	
@@ -57,44 +57,10 @@ function draw() {
   dustbinObj.display();
   //powerdisp.display(launchingForce);
   launcherObject.display();
-  
- 
-  
-  
  
 }
 
-/*function keyPressed() {
-	
-  	if (keyCode === UP_ARROW) 
-  	{
 
-    	if(keyIsDown(70))
-    	{
-    		
-    		launchingForce=launchingForce+5;
-    	}
-
-    
-  	}
-  	if (keyCode === DOWN_ARROW) 
-  	{
-
-    	if(keyIsDown(70))
-    	{
-    		
-    		launchingForce=launchingForce-5;
-    	}
-
-    
-  	}
-  	if (keyCode === 13) 
-  	{
-
-  	Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:launchingForce,y:-launchingForce});
-  	}
-  //console.log(launchingForce);
-}*/
 
 function mouseDragged()
 {
